@@ -1,6 +1,6 @@
 -   id: copyright_checker
     language: system
-    name: upgrade-your-pre-commit-version
-    entry: upgrade-your-pre-commit-version
+    name: copyright checker
+    entry: copyright_checker
     files: ''
     minimum_pre_commit_version: 0.15.0

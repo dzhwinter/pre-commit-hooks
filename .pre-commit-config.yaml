@@ -1,0 +1,16 @@
+-   repo: git://github.com/pre-commit/pre-commit-hooks
+    sha: v0.9.1
+    hooks:
+    -   id: trailing-whitespace
+        files: ''
+        args:
+        - --no-markdown-linebreak-ext
+    -   id: check-json
+    -   id: check-yaml
+-   repo: git://github.com/pre-commit/mirrors-pylint
+    sha: v1.7.2
+    hooks:
+    -   id: pylint
+        args:
+        - --rcfile=.pylintrc
+        - --reports=no
