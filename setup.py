@@ -3,10 +3,10 @@ from setuptools import setup
 
 
 setup(
-    name='pre_commit_hooks',
+    name='pre_commit_copyright_hooks',
     description='Some out-of-the-box hooks for pre-commit.',
     url='https://github.com/dzhwinter/pre-commit-hooks',
-    version='1.2.0',
+    version='1.0.0',
 
     author='dzhwinter',
     author_email='dzhwinter@gmail.com',
@@ -22,13 +22,11 @@ setup(
         'Programming Language :: Python :: Implementation :: PyPy',
     ],
 
-    packages=find_packages(exclude=('tests*')),
+    packages=find_packages('.', exclude=('tests*')),
     install_requires=[
         # quickfix to prevent pycodestyle conflicts
-        'flake8!=2.5.3',
-        'autopep8>=1.3',
-        'pyyaml',
         'six',
+        'argparse'
     ],
     entry_points={
         'console_scripts': [
